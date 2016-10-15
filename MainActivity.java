@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     private String[] parts;
     private Day[] allDays;
     private int index;
+    float x1, x2, deltaX;
 
     private static final int MIN_DISTANCE = 100;
 
@@ -129,7 +130,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
-        float x1, x2, deltaX;
         //scrollView = (scrollView)findViewById()
 
         switch(event.getAction())
